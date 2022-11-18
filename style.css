@@ -66,7 +66,6 @@ a{
     height: 260px;
     width: 360px;
     margin: 10px;
-    box-shadow: 2px 2px 2px gray;
     border-radius: 10px;
     font-weight: 600;
     font-size: large;
@@ -74,10 +73,16 @@ a{
     /* padding-left: 60px; */
 }
 
-.taskHeader,.taskHerader-link{
+.flex-items:hover{
+    box-shadow: 2px 2px 2px gray;
+}
+
+.taskHeader .taskHerader-link {
     color: #00A5EC;
-    padding: 25px 40px;
-    
+    padding: 12px 23px;
+    display: block;
+    text-align: left;
+    padding-top: 15px;
 }
 
 
@@ -88,8 +93,33 @@ a{
 }
 
 .inside-flex-item{
+    padding-left: 20px;
     color: gray;
+}
+
+/* .inside-flex-item .checked{
     text-decoration: line-through;
+} */
+
+input[type=checkbox]:checked +label{
+    text-decoration: line-through;
+}
+
+input[type=checkbox]:checked {
+    accent-color: lightgray;
+
+}
+
+
+
+
+
+
+
+
+
+.inside-flex-item input{
+    padding-left: 20px;
 }
 
 .flex-items input{
@@ -159,3 +189,11 @@ a{
  border: #00A5EC solid 1px;
  color: white;
 }
+
+.input-field inp{
+   
+}
+
+
+
+
